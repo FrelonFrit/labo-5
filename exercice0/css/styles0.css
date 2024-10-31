@@ -1,0 +1,47 @@
+#conteneur1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 30%;
+    
+}
+
+#conteneur2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 30%;
+    
+}
+
+#conteneur3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    width: 35%;
+    column-gap: 2px;
+    row-gap: 2px;
+    background-color: white;
+}
+
+div div{
+    text-align: center;
+    padding: 4px;
+    border: solid 1px black;
+}
+
+
+div:nth-child(odd){
+    background-color: pink;
+}
+
+
+div:nth-child(even){
+    background-color: aquamarine;
+}
+
+body{
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+}
